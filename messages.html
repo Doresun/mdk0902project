@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сообщения</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Кабинет</a>
+        <a href="messages.html" class="active">Сообщения</a>
+        <a href="stats.html">Статистика</a>
+    </nav>
+    <div class="container">
+        <h1>Сообщения</h1>
+        <div class="card">
+            <ul class="msg-list" id="messageList">
+                <li>
+                    <div class="msg-sender"></div>
+                    <div class="msg-text"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="card">
+            <form action="" method="POST" id="messageForm">
+                <input type="text" name="recipient" placeholder="Получатель">
+                <textarea name="message" placeholder="Текст сообщения"></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+    <script></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="active">Кабинет</a>
+        <a href="messages.html">Сообщения</a>
+        <a href="stats.html">Статистика</a>
+    </nav>
+    <div class="container">
+        <h1>Личный кабинет</h1>
+        <div class="card profile-info">
+            <p><span>Имя:</span> <span id="userName"></span></p>
+            <p><span>Email:</span> <span id="userEmail"></span></p>
+            <p><span>Дата регистрации:</span> <span id="userDate"></span></p>
+        </div>
+        <div class="card">
+            <form action="" method="POST" id="profileForm">
+                <input type="text" name="username" placeholder="Новое имя">
+                <input type="email" name="email" placeholder="Новый email">
+                <input type="password" name="password" placeholder="Новый пароль">
+                <button type="submit">Сохранить</button>
+            </form>
+        </div>
+    </div>
+    <script></script>
+</body>
+</html>
