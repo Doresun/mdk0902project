@@ -144,3 +144,119 @@ button:hover {
     color: #888;
     margin-top: 5px;
 }
+
+.sessions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.session-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #2a2a2a;
+    border-radius: 6px;
+}
+
+.session-info {
+    flex: 1;
+}
+
+.session-name {
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.session-details {
+    display: flex;
+    gap: 15px;
+    font-size: 12px;
+    color: #888;
+}
+
+.session-status {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.status-online {
+    background-color: #4ade80;
+    box-shadow: 0 0 8px rgba(74, 222, 128, 0.5);
+}
+
+.status-offline {
+    background-color: #666;
+}
+
+.users-table {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-row {
+    display: grid;
+    grid-template-columns: 80px 1fr 1.5fr 120px 150px;
+    gap: 15px;
+    padding: 15px;
+    border-bottom: 1px solid #2a2a2a;
+    align-items: center;
+}
+
+.user-row.header {
+    background-color: #2a2a2a;
+    font-weight: 600;
+    color: #888;
+    font-size: 13px;
+}
+
+.user-row:not(.header):hover {
+    background-color: #252525;
+}
+
+.user-cell {
+    font-size: 14px;
+}
+
+.status-badge {
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.status-badge.active {
+    background-color: rgba(74, 222, 128, 0.2);
+    color: #4ade80;
+}
+
+.status-badge.inactive {
+    background-color: rgba(102, 102, 102, 0.2);
+    color: #888;
+}
+
+.btn-edit {
+    background-color: #3a3a5c;
+    color: #e0e0e0;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.btn-edit:hover {
+    background-color: #4a4a7a;
+}
+
+select {
+    background-color: #2a2a2a;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 10px;
+    color: #e0e0e0;
+    font-size: 14px;
+    outline: none;
+}

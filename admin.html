@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админ панель</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="admin.html" class="active">Панель управления</a>
+        <a href="admin-messages.html">Сообщения</a>
+        <a href="admin-users.html">Пользователи</a>
+        
+    </nav>
+    <div class="container">
+        <h1>Админ панель</h1>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="number" id="messagesCount">0</div>
+                <div class="label">Сообщений за 24ч</div>
+            </div>
+            <div class="stat-card">
+                <div class="number" id="onlineUsers">0</div>
+                <div class="label">Онлайн</div>
+            </div>
+            <div class="stat-card">
+                <div class="number" id="totalUsers">0</div>
+                <div class="label">Всего пользователей</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Активные сессии</h3>
+            <div class="sessions-list" id="sessionsList">
+                <div class="session-item online">
+                    <div class="session-info">
+                        <div class="session-name">Membrelo</div>
+                        <div class="session-details">
+                            <span class="session-ip">192.168.1.1</span>
+                            <span class="session-time">В сети</span>
+                        </div>
+                    </div>
+                    <div class="session-status status-online"></div>
+                </div>
+                <div class="session-item offline">
+                    <div class="session-info">
+                        <div class="session-name">User123</div>
+                        <div class="session-details">
+                            <span class="session-ip">10.0.0.5</span>
+                            <span class="session-time">Был 2 часа назад</span>
+                        </div>
+                    </div>
+                    <div class="session-status status-offline"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Последние сообщения (24ч)</h3>
+            <ul class="msg-list" id="adminMessageList">
+                <li>
+                    <div class="msg-sender">Membrelo</div>
+                    <div class="msg-text">Тестовое сообщение</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script></script>
+</body>
+</html>
